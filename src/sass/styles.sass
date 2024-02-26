@@ -1,0 +1,316 @@
+=media ($size)
+    @media screen and ( min-width: #{$size}px )
+        @content
+
+html
+    font-size: .8px
+    +media(1600)
+        font-size: 1px
+
+body
+    margin: 0
+
+h2
+    margin: 0
+    font: 700 36rem "Open Sans"
+    color: #333
+
+h3
+    margin: 0
+    font: 500 18rem "Open Sans"
+    color: #d6edfb
+    text-align: center
+
+hr
+    margin: 35rem 0 23rem
+    background-color: #7c9bac
+
+.wrapper
+    margin: 0 auto
+    max-width: 1720rem
+
+.header
+    display: flex
+    justify-content: space-between
+    padding: 25rem 0
+
+.logo
+    display: flex
+    align-items: center
+    text-decoration: none
+
+    img
+        padding-right: 10rem
+
+    b
+        font: 800 36rem "Open Sans"
+        color: #3b5362
+
+.navigation
+    display: flex
+
+    .menu
+        display: flex
+        align-items: center
+        padding-right: 98rem
+
+        a
+            font: 700 18rem "Open Sans"
+            text-decoration: none
+            text-transform: uppercase
+            text-align: center
+            color: #4c7792
+
+            &:first-child
+                padding-right: 47rem
+
+    .call_button
+        
+        a
+            display: block
+            padding: 15rem 29rem
+            font: 700 18rem "Open Sans"
+            text-decoration: none
+            text-transform: uppercase
+            color: #fff
+            border-radius: 10rem
+            background-color: #56c107
+
+.main
+    display: flex
+    flex-wrap: wrap
+    +media(1080)
+        flex-wrap: nowrap
+
+.work_space
+    position: relative
+    // display: block
+    padding-top: 45px
+    width: 50%
+    text-align: center
+    background: linear-gradient(181deg, #bfe5f5 0%, #c6eee8 100%)
+    box-sizing: border-box
+    overflow: hidden
+
+.easel
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    background-image: url(../img/easel.png)
+    background-size: contain
+    // background-position-y: 200px
+    background-position-x: center
+    background-repeat: no-repeat
+
+.canvas
+    position: absolute
+    content: ''
+    // display: block
+    left: 50%
+    // top: 50%
+    bottom: 229.8rem
+    width: 518rem
+    height: 518rem
+    background-color: #fff
+    transform: translateX(-50%)
+
+// .easel:before
+//     position: absolute
+//     content: ''
+//     // display: block
+//     left: 22px
+//     top: 140px
+//     width: 37rem
+//     height: 37rem
+//     background-color: #fff
+
+.settings_block
+    padding: 104rem 50rem
+    width: 50%
+    background-color: #f1f9fb
+
+.canvas_options
+    display: inline-block
+    padding: 50rem 30rem
+    background-color: #fff
+    border: 1px solid #000
+    border-radius: 10rem
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.05))
+
+    h2
+        margin-bottom: 24rem
+
+.size_option
+    display: flex
+    margin: 19rem 0
+
+.button_size
+    padding: 0 8rem
+
+    &:first-child
+        padding-left: 0
+
+    &:last-child
+        padding-right: 0
+
+.size,
+.size_field
+    padding: 7rem 15rem
+    font: 500 24rem "Open Sans"
+    text-align: center
+    color: #4c7792
+    background-color: #fff
+    border: 2rem solid #4c7792
+    border-radius: 5rem
+
+.size:hover
+    background-color: #f2f9fb
+
+// .exact_size
+//     max-width: 33.57rem
+
+//     table
+//         border-collapse: collapse
+
+//     td
+//         padding: 8px 0 4px
+//         font: 500 1.14rem "Open Sans"
+//         color: #333
+
+//     p
+//         display: flex
+//         font: 500 16rem "Open Sans"
+//         color: #333
+//         text-align: center
+
+.custom_size
+    display: flex
+    align-items: flex-end
+
+    label
+        display: block
+        margin-bottom: 6rem
+        font: 500 16rem "Open Sans"
+        color: #333
+        // text-align: center
+    
+    span
+        position: absolute
+        top: 32rem
+        right: -31rem
+        color: #4c7792
+        font: 500 24rem "Open Sans"
+        text-align: center
+
+.wcs
+    position: relative
+    margin-right: 50rem
+
+.size_field
+    max-width: 67rem
+
+.submit
+    margin-left: 20rem
+    padding: 13rem 11rem
+    width: 200rem
+    text-transform: uppercase
+    text-align: center
+    color: #4c7792
+    background-color: #d6edfb
+    border: none
+    border-radius: 10rem
+    font: 700 18rem "Open Sans"
+
+
+.additional_options
+    width: 100%
+
+    p
+        margin: 0
+        font: 500 18rem "Open Sans"
+        color: #333
+        text-align: right
+
+.option
+    margin: 10rem 0
+
+    &:first-child
+        margin-top: 0
+
+    &:last-child
+        margin-bottom: 0
+
+.option,
+.option label
+    display: flex
+    justify-content: space-between
+    align-items: center
+    column-gap: 17rem
+
+    input
+        margin: 0
+        appearance: none
+        width: 25rem
+        height: 25rem
+        border-radius: 5rem
+        background-color: #fff
+        border: 2rem solid #4c7792
+
+        &:checked
+            background-color: #4c7792
+
+    span
+        color: #4c7792
+        font: 700 18rem "Open Sans"
+
+.my40
+    margin: 40rem 0
+
+.buy_group
+    display: flex
+    justify-content: space-between
+    max-width: 700rem
+    border-radius: 10px
+    background-color: rgba(#d6edfb, .5)
+
+.buy_button a
+    display: block
+    padding: 24rem 57rem
+    font: 700 24rem "Open Sans"
+    text-decoration: none
+    text-transform: uppercase
+    color: #fff
+    background-color: #56c107
+    border-radius: 10px
+    text-align: center
+
+.total_price
+    display: flex
+    align-items: center
+    padding-right: 20rem
+
+    p
+        text-transform: uppercase
+        color: #333
+        font: 700 18rem "Open Sans"
+        text-align: center
+
+    b
+        margin-left: 25rem
+        // padding-bottom: 4rem
+        color: #56c107
+        font: 700 48rem "Open Sans"
+        text-align: center
+
+    span
+        margin-left: 13rem
+        // padding-top: 2rem
+        color: #56c107
+        font: 400 38rem "Open Sans"
+        text-align: center
+
+.footer
+    padding: 18rem 0
+    background-color: #333333
+        

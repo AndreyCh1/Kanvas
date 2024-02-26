@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="css/styles.css")
+        title Kanvas
+    body 
+        .wrapper
+            .header
+                a.logo(href="#")
+                    img(src="img/logo.png", alt="")
+                    b Kanvas
+                .navigation
+                    .menu
+                        a(href="#") галерея
+                        a(href="#") про нас
+                    .call_button
+                        a(href="#") замовити дзвінок
+        .main
+            .work_space
+                .easel
+                    .canvas
+            .settings_block
+                .canvas_options
+                    h2 Виберіть розмір
+                    .size_option
+                        .button_size
+                            button.size 30x30
+                        .button_size
+                            button.size 30x90
+                        .button_size
+                            button.size 90x120
+                        .button_size
+                            button.size 90x150
+                        //- .button_size
+                        //-     button.submit задати розмір
+                    form.custom_size(action="", method="")
+                        .wcs
+                            label(for="width") ширина
+                            input.size_field(value="" id="width", type="number", placeholder="")
+                            span х
+                        .hcs
+                            label(for="height") висота
+                            input.size_field(id="height", type="number", placeholder="")
+                        button.submit підрахувати
+                    hr
+                    h2 Додаткові опції
+                    form(action="", method="")
+                        .additional_options
+                            .option
+                                label(for="markup_canvas")
+                                    input(id="markup_canvas" type="checkbox" name="" value="")
+                                    span дорожче полотно
+                                p + 35 грн
+                            .option
+                                label(for="markup_frame")
+                                    input(id="markup_frame" type="checkbox" name="" value="")
+                                    span з рамкою
+                                p + 10 грн
+                            .option
+                                label(for="markup_delivery")
+                                    input(id="markup_delivery" type="checkbox" name="" value="")
+                                    span з доставкою (Нова Пошта)
+                                p + 40 грн
+                    hr.my40
+                    .buy_group
+                        .buy_button
+                            a(href="#") придбати
+                        .total_price
+                            p Загальна сума:
+                            //- a(href="#")
+                            div
+                                b 350
+                                span грн
+        .footer
+            h3 © Kanvas. Всі права захищені
+        script(src="js/script.js")
