@@ -53,17 +53,17 @@ html(lang="en")
                         .additional_options
                             .option
                                 label(for="markup_canvas")
-                                    input(id="markup_canvas" type="checkbox" name="" value="")
+                                    input(data-value="markup_canvas" type="checkbox" name="" value="")
                                     span дорожче полотно
                                 p + 35 грн
                             .option
                                 label(for="markup_frame")
-                                    input(id="markup_frame" type="checkbox" name="" value="")
+                                    input(data-value="markup_frame" type="checkbox" name="" value="")
                                     span з рамкою
                                 p + 10 грн
                             .option
                                 label(for="markup_delivery")
-                                    input(id="markup_delivery" type="checkbox" name="" value="")
+                                    input(data-value="markup_delivery" type="checkbox" name="" value="")
                                     span з доставкою (Нова Пошта)
                                 p + 40 грн
                     hr.my40
@@ -74,7 +74,8 @@ html(lang="en")
                             p Загальна сума:
                             //- a(href="#")
                             div
-                                b 350
+                                b 
+                                    |350
                                 span грн
         .footer
             h3 © Kanvas. Всі права захищені
