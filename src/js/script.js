@@ -73,6 +73,17 @@ custom_button.addEventListener('click', function (event) {
     document.querySelector(".canvas").style.height = height + "rem"
 })
 
+function correctSize (input) {
+    if (input.target.value < 0) {
+        input.target.value = 0
+    }
+    console.log(input.target)
+}
+
+input_width.addEventListener('change', correctSize.bind(event))
+
+input_height.addEventListener('change', correctSize.bind(event))
+
 // console.log(input_checkbox)
 
 input_checkbox.forEach(function (checkbox) {
